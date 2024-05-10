@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
@@ -9,9 +10,9 @@
    <children>
       <Button layoutX="276.0" layoutY="282.0" mnemonicParsing="false" text="Entrar" />
       <Button layoutX="528.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToWindow2" text="Admin" />
-      <TextField layoutX="226.0" layoutY="210.0" />
-      <TextField layoutX="226.0" layoutY="151.0" />
+      <TextField fx:id="crm" alignment="CENTER" layoutX="226.0" layoutY="151.0" promptText="Usuário" />
       <Text layoutX="286.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRM" wrappingWidth="27.3828125" />
       <Text layoutX="281.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SENHA" />
+      <PasswordField fx:id="senha" alignment="CENTER" layoutX="226.0" layoutY="217.0" promptText="Senha" />
    </children>
 </AnchorPane>
