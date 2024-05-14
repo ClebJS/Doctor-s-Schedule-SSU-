@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #004AB3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TelaController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="778.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="843.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../background1.jpg" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" layoutX="287.0" layoutY="157.0" text="Calendário SSU" textAlignment="CENTER" textFill="#e3e7e8">
+               <font>
+                  <Font name="Century Gothic" size="36.0" />
+               </font></Label>
+            <AnchorPane layoutX="215.0" layoutY="251.0" prefHeight="201.0" prefWidth="410.0" style="-fx-background-color: E3E7E8; -fx-background-radius: 18;">
+               <children>
+                  <PasswordField layoutX="43.0" layoutY="100.0" prefHeight="31.0" prefWidth="325.0" promptText="Senha">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font></PasswordField>
+                  <Button layoutX="165.0" layoutY="149.0" mnemonicParsing="false" onAction="#switchToWindow3" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #05275B; -fx-background-radius: 50;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField id="Usuário/textfield" accessibleText="Usuário" layoutX="43.0" layoutY="45.0" prefHeight="31.0" prefWidth="325.0" promptText="Usuário">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <Button id="botaoadmin" fx:id="login" alignment="CENTER" graphicTextGap="5.0" layoutX="50.0" layoutY="530.0" mnemonicParsing="false" onAction="#switchToWindow2" text="Administrador" textAlignment="CENTER" underline="true" />
+            <ImageView fitHeight="86.0" fitWidth="128.0" layoutX="377.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logossu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

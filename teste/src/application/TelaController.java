@@ -24,7 +24,7 @@ public class TelaController {
 	private Scene scene;
 	public void switchToWindow1(ActionEvent event) throws IOException
 	{
-		Parent root = FXMLLoader.load(getClass().getResource("Window.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
 		window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		window.setScene(scene);
@@ -33,7 +33,7 @@ public class TelaController {
 	
 	public void switchToWindow2(ActionEvent event) throws IOException
 	{
-		Parent root = FXMLLoader.load(getClass().getResource("Windowop.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("admin.fxml"));
 		window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		window.setScene(scene);
@@ -45,7 +45,7 @@ public class TelaController {
 		try {
 		if(usuario.getText().toString().equals("ivo"))
 		{
-			Parent root = FXMLLoader.load(getClass().getResource("WindowCad.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("admincad.fxml"));
 			window = (Stage)((Node)event.getSource()).getScene().getWindow();
 			scene = new Scene(root);
 			window.setScene(scene);
@@ -53,7 +53,7 @@ public class TelaController {
 		}
 		}catch(Exception e)
 		{
-		
+			e.printStackTrace();
 		}
 	}
 	
