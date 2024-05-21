@@ -1,6 +1,7 @@
 package application;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -57,7 +58,15 @@ public class TelaController {
 		}
 	}
 	
-
+	public void cadastro(ActionEvent event) throws IOException
+	{
+		ArrayList<Medico> Medicos = new ArrayList<Medico>();
+		Medico m = new Medico();
+		m.setCRM(0);
+		m.setNome(null);
+		m.setSenha(0);
+		Medicos.add(m);
+	}
 
 	
 
