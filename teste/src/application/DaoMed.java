@@ -3,15 +3,15 @@ package application;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DaoMed implements MedicoDao{
+public class DaoMed implements MedicoDao {
 	
-	List<Medico> Medicos;
+	public List<Medico> Medicos;
 	
 	public DaoMed() {
 		Medicos = new ArrayList<Medico>();
-		Medico med = new Medico(123456, "Edgar", 123);
-		Medico med1 = new Medico(654321, "Livia", 321);
-		Medico med2 = new Medico(321123, "Marina", 312);
+		Medico med = new Medico("123456", "123");
+		Medico med1 = new Medico("654321", "321");
+		Medico med2 = new Medico("321123", "312");
 		Medicos.add(med);
 		Medicos.add(med1);
 		Medicos.add(med2);
@@ -23,13 +23,10 @@ public class DaoMed implements MedicoDao{
 	}
 
 	@Override
-	public void addMedico(Medico Medico) {
-		Medicos.get(Medico.getSenha()).setNome(Medico.getNome());
+	public void addMedico(Medico medico) {
+		Medicos.add(medico);
+		
 	}
 
-	@Override
-	public Medico getMedico(int senha) {
 	
-		return Medicos.get(senha);
-	}
 }

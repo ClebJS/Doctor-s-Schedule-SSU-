@@ -22,13 +22,13 @@
             </ImageView>
             <AnchorPane layoutX="202.0" layoutY="211.0" prefHeight="239.0" prefWidth="438.0" style="-fx-background-color: E3E7E8; -fx-background-radius: 25;">
                <children>
-                  <Button layoutX="179.0" layoutY="184.0" mnemonicParsing="false" onAction="#switchToWindow1" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #05275B; -fx-background-radius: 50;" text="Cadastrar" textAlignment="CENTER" textFill="WHITE">
+                  <Button layoutX="179.0" layoutY="184.0" mnemonicParsing="false" onAction="#signup" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #05275B; -fx-background-radius: 50;" text="Cadastrar" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="Century Gothic Bold" size="12.0" />
                      </font>
                   </Button>
-                  <TextField layoutX="69.0" layoutY="53.0" prefHeight="40.0" prefWidth="300.0" promptText="CRM" style="-fx-background-radius: 24;" />
-                  <TextField layoutX="69.0" layoutY="120.0" prefHeight="40.0" prefWidth="300.0" promptText="CPF" style="-fx-background-radius: 24;" />
+                  <TextField fx:id="CRM" layoutX="69.0" layoutY="53.0" prefHeight="40.0" prefWidth="300.0" promptText="CRM" style="-fx-background-radius: 24;" />
+                  <TextField fx:id="senha" layoutX="69.0" layoutY="120.0" prefHeight="40.0" prefWidth="300.0" promptText="CPF" style="-fx-background-radius: 24;" />
                </children>
                <effect>
                   <DropShadow height="120.66" radius="34.915">
@@ -48,6 +48,7 @@
                   <Font name="Century Gothic" size="24.0" />
                </font>
             </Label>
+            <Button layoutX="33.0" layoutY="541.0" mnemonicParsing="false" onAction="#switchToWindow1" text="login" />
          </children>
       </AnchorPane>
    </children>

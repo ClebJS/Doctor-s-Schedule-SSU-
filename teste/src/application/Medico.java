@@ -1,26 +1,29 @@
 package application;
 
 public class Medico {
-	private int crm;
+	private String crm;
 	private String nome;
-	private int senha;
+	private String senha;
 
-	public Medico(int crm, String nome, int senha){
+	public Medico(String crm, String nome, String senha){
 		this.crm = crm;
 		this.nome = nome;
 		this.senha = senha;
 				
 	}
-	public Medico(){
 
-				
+
+	public Medico(String crm, String senha) {
+		this.crm = crm;
+		this.senha = senha;
 	}
 
-	public int getCRM() {
+
+	public String getCRM() {
 		return crm;
 	}
 
-	public void setCRM(int crm) {
+	public void setCRM(String crm) {
 		this.crm = crm;
 	}
 
@@ -32,13 +35,14 @@ public class Medico {
 		this.nome = nome;
 	}
 
-	public int getSenha() {
+	public String getSenha() {
 		return senha;
 	}
 
-	public void setSenha(int senha) {
+	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
 
 
 }
