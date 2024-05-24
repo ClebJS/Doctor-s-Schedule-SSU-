@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DaoMed implements MedicoDao {
-	
+	private static DaoMed instance;
 	public List<Medico> Medicos;
-	
+
 	public DaoMed() {
 		Medicos = new ArrayList<Medico>();
 		Medico med = new Medico("123456", "123");
@@ -29,4 +29,12 @@ public class DaoMed implements MedicoDao {
 	}
 
 	
+	public static synchronized DaoMed getInstance()
+    {
+        if(instance == null)
+        {
+           instance=new DaoMed();
+        }
+        return instance;
+    }
 }

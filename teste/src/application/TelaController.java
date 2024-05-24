@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class TelaController extends DaoMed{	
+public class TelaController{	
 	@FXML
 	private Label resultado;
 	@FXML
@@ -31,7 +31,7 @@ public class TelaController extends DaoMed{
 	private TextField usuarioMed;
 	@FXML
 	private TextField senhalog;
-	MedicoDao medicoDao = new DaoMed();
+	public DaoMed medicoDao;
 	
 	public void switchToWindow1(ActionEvent event) throws IOException
 	{
@@ -71,30 +71,10 @@ public class TelaController extends DaoMed{
 	public void signup(ActionEvent event) throws IOException
 	{
 		Medico medico = new Medico(CRM.getText().toString(), senha.getText().toString());
+		medicoDao = DaoMed.getInstance();
 		medicoDao.addMedico(medico);
-		System.out.print(medicoDao.Medicos());
 
 	}
-	@FXML
-	public void signin(ActionEvent event) throws IOException
-	{
-		System.out.print(medicoDao.Medicos().size());
-		for(int i=0; i < medicoDao.Medicos().size(); i++)
-		{
-			Medico Medico = medicoDao.Medicos().get(i);
-			if(senhalog.getText().equals(Medico.getSenha()) && usuarioMed.getText().equals(Medico.getCRM())) {
-				Parent root = FXMLLoader.load(getClass().getResource("admincad.fxml"));
-				window = (Stage)((Node)event.getSource()).getScene().getWindow();
-				scene = new Scene(root);
-				window.setScene(scene);
-				window.show();
-			}
-		}
-		
+
 	}
 
-
-	
-
-
-}
