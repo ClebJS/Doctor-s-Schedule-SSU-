@@ -1,4 +1,4 @@
-package application;
+package model;
 
 public class Paciente {
 	private int Idade;

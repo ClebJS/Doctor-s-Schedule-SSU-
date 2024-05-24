@@ -1,6 +1,7 @@
-package application;
+package application.controllers;
 
 import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +12,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import model.DaoMed;
+import model.Medico;
 
 public class TelaController{	
 	@FXML

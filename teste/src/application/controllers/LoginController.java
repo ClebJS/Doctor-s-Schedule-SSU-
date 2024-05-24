@@ -1,4 +1,4 @@
-package application;
+package application.controllers;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,6 +11,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import model.DaoMed;
+import model.Medico;
 
 public class LoginController
 {
