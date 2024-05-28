@@ -1,5 +1,6 @@
 package application;
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -11,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
@@ -21,8 +23,12 @@ public class HomeController implements Initializable{
 	private Label nome;
 	@FXML
 	private Label nomegrande;
+	@FXML
+	private Button btn;
+	
 	public static Label nome_static;
-	public static Label nomegrande_static;	
+	public static Label nomegrande_static;
+	@FXML
 	public void switchToWindow1(ActionEvent event) throws IOException
 	{
 		Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
@@ -36,6 +42,15 @@ public class HomeController implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		nome_static = nome;
 		nomegrande_static = nomegrande;
+	}
+	@FXML
+	public void pacientebotao(ActionEvent event) throws IOException
+	{
+		Stage tela = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("addpaciente.fxml"));
+		scene = new Scene(root);
+		tela.setScene(scene);
+		tela.show();
 	}
 	
 	
