@@ -6,7 +6,8 @@ public class Paciente {
 	private float Peso;
 	private String Historico;
 
-	public void Consulta(int idade, String nome, String historico, int peso){
+
+	public Paciente(int idade, String nome, String historico, int peso){
 		this.setIdade(idade);
 		this.setNome(nome);
 		this.setHistorico(historico);

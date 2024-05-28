@@ -9,9 +9,9 @@ public class DaoMed implements MedicoDao {
 
 	public DaoMed() {
 		Medicos = new ArrayList<Medico>();
-		Medico med = new Medico("123456", "123");
-		Medico med1 = new Medico("654321", "321");
-		Medico med2 = new Medico("321123", "312");
+		Medico med = new Medico("123456", "Edgar", "123");
+		Medico med1 = new Medico("654321","Joao", "321");
+		Medico med2 = new Medico("321123", "Maria",  "312");
 		Medicos.add(med);
 		Medicos.add(med1);
 		Medicos.add(med2);

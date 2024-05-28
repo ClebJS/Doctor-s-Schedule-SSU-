@@ -8,13 +8,11 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class TelaController{	
-	@FXML
-	private Label resultado;
+public class TelaController
+{	
 	@FXML
 	private TextField usuario;
 	@FXML
@@ -66,14 +64,6 @@ public class TelaController{
 		{
 			e.printStackTrace();
 		}
-	}
-	@FXML
-	public void signup(ActionEvent event) throws IOException
-	{
-		Medico medico = new Medico(CRM.getText().toString(), senha.getText().toString());
-		medicoDao = DaoMed.getInstance();
-		medicoDao.addMedico(medico);
-
 	}
 
 	}

@@ -39,6 +39,7 @@
                         <Font name="Century Gothic" size="15.0" />
                      </font>
                   </TextField>
+                  <Label fx:id="resultado" layoutX="191.0" layoutY="22.0" textFill="RED" />
                </children>
             </AnchorPane>
             <Button id="botaoadmin" fx:id="login" alignment="CENTER" graphicTextGap="5.0" layoutX="50.0" layoutY="530.0" mnemonicParsing="false" onAction="#switchToWindow2" text="Administrador" textAlignment="CENTER" underline="true" />

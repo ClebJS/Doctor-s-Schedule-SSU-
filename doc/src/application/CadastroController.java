@@ -19,6 +19,8 @@ public class CadastroController {
 	private TextField CRM;
 	@FXML
 	private TextField senha;
+	@FXML
+	private TextField mednome;
 	public DaoMed medicoDao;
 	
 	public void switchToWindow1(ActionEvent event) throws IOException
@@ -33,7 +35,7 @@ public class CadastroController {
 	@FXML
 	public void signup(ActionEvent event) throws IOException
 	{
-		Medico medico = new Medico(CRM.getText().toString(), senha.getText().toString());
+		Medico medico = new Medico(CRM.getText().toString(), mednome.getText().toString(),senha.getText().toString());
 		medicoDao = DaoMed.getInstance();
 		medicoDao.addMedico(medico);
 
