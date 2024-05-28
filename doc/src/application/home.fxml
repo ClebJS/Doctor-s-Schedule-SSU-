@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="598.0" prefWidth="816.0" style="-fx-background-color: #004AB3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <AnchorPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="816.0">
+         <children>
+            <AnchorPane layoutX="28.0" layoutY="23.0" prefHeight="552.0" prefWidth="80.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.4656488597393036" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Button contentDisplay="CENTER" layoutX="16.0" layoutY="136.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/homeicon.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Button layoutX="16.0" layoutY="215.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/notificationicon.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="488.0" mnemonicParsing="false" onAction="#switchToWindow1" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 16;">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/logouticon.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="52.0" fitWidth="49.0" layoutX="16.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../logossu(dark).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="138.0" layoutY="83.0" prefHeight="106.0" prefWidth="380.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <children>
+                  <ImageView fitHeight="98.0" fitWidth="128.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../doctor3dilustration.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0c408b" layoutX="136.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá Dr." wrappingWidth="80.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="nome" layoutX="216.0" layoutY="31.0" text="Carla" textFill="#0c408b">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#0c408b" layoutX="136.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenha um ótimo dia de trabalho!" wrappingWidth="209.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.3854961693286896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Text fill="#cce0ff" layoutX="133.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="135.08984375">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="133.0" layoutY="220.0" prefHeight="143.0" prefWidth="86.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <children>
+                  <Text fill="#0c408b" layoutX="17.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notas">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c408b" layoutX="17.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veja aqui suas notas" textAlignment="CENTER" wrappingWidth="52.81591796875">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.3778626024723053" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Button layoutX="263.0" layoutY="277.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/plusicon.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Text fill="#cce0ff" layoutX="238.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicione uma nota" textAlignment="CENTER" wrappingWidth="99.83740234375">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Text>
+            <Pane fx:id="nomemedgrande" layoutX="578.0" layoutY="-9.0" prefHeight="608.0" prefWidth="241.0" style="-fx-background-color: CCE0FF;">
+               <children>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sérgio Montes" wrappingWidth="105.83740234375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="43.0" layoutY="42.0" prefHeight="155.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="155.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../personicon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#0c408b" layoutX="18.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacientes de hoje">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="31.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../velho.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homem, 69" wrappingWidth="73.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="31.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../mulher.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clara Passos" wrappingWidth="105.83740234375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mulher, 24" wrappingWidth="73.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="31.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../homem.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="João Carlos" wrappingWidth="105.83740234375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homem, 22" wrappingWidth="73.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="nomegrande" layoutX="92.0" layoutY="203.0" prefHeight="50.0" prefWidth="100.0" text="Carla" textFill="#0c408b">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="126.0" layoutY="379.0" prefHeight="194.0" prefWidth="432.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2862595319747925" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Text fill="#0c408b" layoutX="30.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacientes na data de:">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <DatePicker layoutX="229.0" layoutY="21.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
