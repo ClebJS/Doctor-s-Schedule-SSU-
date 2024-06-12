@@ -1,6 +1,6 @@
 package application;
 import java.util.List;
 public interface MedicoDao {
-	public List<Medico> Medicos();
+	public List<Medico> RetornarMedicos();
 	public void addMedico(Medico medico);
 }

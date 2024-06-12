@@ -1,13 +1,13 @@
 package application;
 
 public class Paciente {
-	private int Idade;
+	private String Idade;
 	private String Nome;
-	private float Peso;
+	private String Peso;
 	private String Historico;
 
 
-	public Paciente(int idade, String nome, String historico, int peso){
+	public Paciente(String idade, String nome, String historico, String peso){
 		this.setIdade(idade);
 		this.setNome(nome);
 		this.setHistorico(historico);
@@ -15,11 +15,11 @@ public class Paciente {
 				
 	}
 
-	public int getIdade() {
+	public String getIdade() {
 		return Idade;
 	}
 
-	public void setIdade(int idade) {
+	public void setIdade(String idade) {
 		Idade = idade;
 	}
 
@@ -31,11 +31,11 @@ public class Paciente {
 		Nome = nome;
 	}
 
-	public float getPeso() {
+	public String getPeso() {
 		return Peso;
 	}
 
-	public void setPeso(float peso) {
+	public void setPeso(String peso) {
 		Peso = peso;
 	}
 

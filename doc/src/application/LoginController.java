@@ -29,14 +29,14 @@ public class LoginController extends HomeController implements Initializable
 	private Scene scene;
 
 	DaoMed medicoDao = DaoMed.getInstance();
-	List<Medico> Medicos = medicoDao.Medicos();
+	List<Medico> Medicos = medicoDao.RetornarMedicos();
 	@FXML
 	public void signin(ActionEvent event) throws IOException
 	{
 
 		for(int i=0; i < medicoDao.Medicos.size(); i++)
 		{
-			Medico Medico = medicoDao.Medicos().get(i);
+			Medico Medico = medicoDao.RetornarMedicos().get(i);
 			if(senhalog.getText().equals(Medico.getSenha()) && usuarioMed.getText().equals(Medico.getCRM())) {
 				Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
 				window = (Stage)((Node)event.getSource()).getScene().getWindow();

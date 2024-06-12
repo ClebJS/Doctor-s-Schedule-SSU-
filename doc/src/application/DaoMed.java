@@ -18,7 +18,7 @@ public class DaoMed implements MedicoDao {
 	}
 	
 	@Override
-	public List<Medico> Medicos() {
+	public List<Medico> RetornarMedicos() {
 		return Medicos;
 	}
 

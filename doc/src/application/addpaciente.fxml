@@ -36,27 +36,27 @@
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </Text>
-                  <TextField layoutX="53.0" layoutY="128.0" prefHeight="37.0" prefWidth="299.0" promptText="Nome" style="-fx-background-radius: 16;">
+                  <TextField fx:id="Nome" layoutX="53.0" layoutY="128.0" prefHeight="37.0" prefWidth="299.0" promptText="Nome" style="-fx-background-radius: 16;">
                      <font>
                         <Font name="Century Gothic" size="12.0" />
                      </font>
                   </TextField>
-                  <TextField layoutX="400.0" layoutY="128.0" prefHeight="37.0" prefWidth="299.0" promptText="Data de Nascimento" style="-fx-background-radius: 16;">
+                  <TextField fx:id="Idade" layoutX="400.0" layoutY="128.0" prefHeight="37.0" prefWidth="299.0" promptText="Idade" style="-fx-background-radius: 16;">
                      <font>
                         <Font name="Century Gothic" size="12.0" />
                      </font>
                   </TextField>
-                  <TextArea layoutX="51.0" layoutY="259.0" prefHeight="191.0" prefWidth="655.0" promptText="Justifique a Necessidade do Agendamento">
+                  <TextArea fx:id="Hist" layoutX="51.0" layoutY="259.0" prefHeight="191.0" prefWidth="655.0" promptText="Justifique a Necessidade do Agendamento">
                      <font>
                         <Font name="Century Gothic" size="12.0" />
                      </font>
                   </TextArea>
-                  <TextField layoutX="51.0" layoutY="188.0" prefHeight="37.0" prefWidth="299.0" promptText="Peso" style="-fx-background-radius: 16;">
+                  <TextField fx:id="Peso" layoutX="51.0" layoutY="188.0" prefHeight="37.0" prefWidth="299.0" promptText="Peso" style="-fx-background-radius: 16;">
                      <font>
                         <Font name="Century Gothic" size="12.0" />
                      </font>
                   </TextField>
-                  <TextField layoutX="400.0" layoutY="188.0" prefHeight="37.0" prefWidth="299.0" promptText="Sexo" style="-fx-background-radius: 16;">
+                  <TextField fx:id="Sexo" layoutX="400.0" layoutY="188.0" prefHeight="37.0" prefWidth="299.0" promptText="Sexo" style="-fx-background-radius: 16;">
                      <font>
                         <Font name="Century Gothic" size="12.0" />
                      </font>

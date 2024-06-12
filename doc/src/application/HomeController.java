@@ -14,6 +14,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class HomeController implements Initializable{
@@ -49,8 +50,23 @@ public class HomeController implements Initializable{
 		Stage tela = new Stage();
 		Parent root = FXMLLoader.load(getClass().getResource("addpaciente.fxml"));
 		scene = new Scene(root);
+		tela.setTitle("SSU Agenda");
 		tela.setScene(scene);
 		tela.show();
+		Image icon = new Image("SSU.png");
+		tela.getIcons().add(icon);
+	}
+	
+	public void notfbotao(ActionEvent event) throws IOException
+	{
+		Stage tela = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("notificações.fxml"));
+		scene = new Scene(root);
+		tela.setTitle("SSU Agenda");
+		tela.setScene(scene);
+		tela.show();
+		Image icon = new Image("SSU.png");
+		tela.getIcons().add(icon);
 	}
 	
 	
