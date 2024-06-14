@@ -125,8 +125,36 @@
                               <Font name="Century Gothic" size="24.0" />
                            </font>
                         </Label>
-                     </children></Pane>
-                  <Text fill="#0c408b" layoutX="105.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sérgio Montes" wrappingWidth="105.83740234375">
+                        <Button layoutX="9.0" layoutY="337.0" mnemonicParsing="false" onAction="#pacienteabrir1" prefHeight="20.0" prefWidth="47.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/velho.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button layoutX="7.0" layoutY="423.0" mnemonicParsing="false" onAction="#pacienteabrir2" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/mulher.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button layoutX="7.0" layoutY="508.0" mnemonicParsing="false" onAction="#pacienteabrir3" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/homem.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Text fx:id="n1" fill="#0c408b" layoutX="105.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sérgio Montes" wrappingWidth="105.83740234375">
                      <font>
                         <Font name="Century Gothic Bold" size="15.0" />
                      </font>
@@ -145,22 +173,12 @@
                         <Font name="Century Gothic Bold" size="18.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="31.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../velho.png" />
-                     </image>
-                  </ImageView>
                   <Text fill="#0c408b" layoutX="105.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homem, 69" wrappingWidth="73.0">
                      <font>
                         <Font name="Century Gothic" size="13.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="31.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../mulher.png" />
-                     </image>
-                  </ImageView>
-                  <Text fill="#0c408b" layoutX="105.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clara Passos" wrappingWidth="105.83740234375">
+                  <Text fx:id="n2" fill="#0c408b" layoutX="105.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clara Passos" wrappingWidth="105.83740234375">
                      <font>
                         <Font name="Century Gothic Bold" size="15.0" />
                      </font>
@@ -170,12 +188,7 @@
                         <Font name="Century Gothic" size="13.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="31.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../homem.png" />
-                     </image>
-                  </ImageView>
-                  <Text fill="#0c408b" layoutX="105.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="João Carlos" wrappingWidth="105.83740234375">
+                  <Text fx:id="n3" fill="#0c408b" layoutX="105.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="João Carlos" wrappingWidth="105.83740234375">
                      <font>
                         <Font name="Century Gothic Bold" size="15.0" />
                      </font>
