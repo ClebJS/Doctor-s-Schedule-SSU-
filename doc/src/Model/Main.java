@@ -1,5 +1,7 @@
 package application;
 
+
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -13,7 +15,7 @@ public class Main extends Application {
 	public void start(Stage window) {
 		try {
 
-			Parent root = FXMLLoader.load(getClass().getResource("/application/View/login.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			window.setTitle("SSU Agenda");

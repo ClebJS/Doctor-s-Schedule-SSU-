@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="598.0" prefWidth="816.0" style="-fx-background-color: #004AB3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.HomeController">
+   <children>
+      <AnchorPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="816.0">
+         <children>
+            <AnchorPane layoutX="28.0" layoutY="23.0" prefHeight="552.0" prefWidth="80.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.4656488597393036" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Button layoutX="15.0" layoutY="119.0" mnemonicParsing="false" onAction="#notfbotao" prefHeight="50.0" prefWidth="50.0">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/notificationicon.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="488.0" mnemonicParsing="false" onAction="#switchToWindow1" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 16;">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/logouticon.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="52.0" fitWidth="49.0" layoutX="16.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/logossu(dark).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="152.0" layoutY="71.0" prefHeight="106.0" prefWidth="380.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <children>
+                  <ImageView fitHeight="98.0" fitWidth="128.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/doctor3dilustration.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0c408b" layoutX="136.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Olá Dr." wrappingWidth="80.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="nome" layoutX="216.0" layoutY="31.0" text="Carla" textFill="#0c408b">
+                     <font>
+                        <Font name="Century Gothic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#0c408b" layoutX="136.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenha um ótimo dia de trabalho!" wrappingWidth="209.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.3854961693286896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Text fill="#cce0ff" layoutX="126.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="135.08984375">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="126.0" layoutY="207.0" prefHeight="143.0" prefWidth="432.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <children>
+                  <Text fill="#0c408b" layoutX="33.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notas">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextArea layoutX="33.0" layoutY="48.0" prefHeight="81.0" prefWidth="106.0" style="-fx-background-color: CCE0FF; -fx-border-radius: 24;" />
+                  <TextArea layoutX="294.0" layoutY="48.0" prefHeight="81.0" prefWidth="106.0" style="-fx-background-color: CCE0FF;" />
+                  <TextArea layoutX="163.0" layoutY="48.0" prefHeight="81.0" prefWidth="106.0" style="-fx-background-color: CCE0FF; -fx-border-radius: 24;" />
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.3778626024723053" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Pane fx:id="nomemedgrande" layoutX="578.0" layoutY="-9.0" prefHeight="608.0" prefWidth="241.0" style="-fx-background-color: CCE0FF;">
+               <children>
+                  <Pane layoutY="6.0" prefHeight="598.0" prefWidth="241.0">
+                     <children>
+                        <Label fx:id="nomegrande" layoutX="88.0" layoutY="214.0" text="Carla" textFill="#0c408b">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="9.0" layoutY="337.0" mnemonicParsing="false" onAction="#pacienteabrir1" prefHeight="20.0" prefWidth="47.0" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/velho.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button layoutX="7.0" layoutY="423.0" mnemonicParsing="false" onAction="#pacienteabrir2" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/mulher.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                        <Button layoutX="7.0" layoutY="508.0" mnemonicParsing="false" onAction="#pacienteabrir3" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                    <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/homem.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Text fx:id="n1" fill="#0c408b" layoutX="105.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sérgio Montes" wrappingWidth="105.83740234375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="43.0" layoutY="42.0" prefHeight="155.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="155.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/personicon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#0c408b" layoutX="18.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacientes de hoje">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homem, 69" wrappingWidth="73.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="n2" fill="#0c408b" layoutX="105.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clara Passos" wrappingWidth="105.83740234375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mulher, 24" wrappingWidth="73.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="n3" fill="#0c408b" layoutX="105.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="João Carlos" wrappingWidth="105.83740234375">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#0c408b" layoutX="105.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homem, 22" wrappingWidth="73.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="126.0" layoutY="379.0" prefHeight="194.0" prefWidth="432.0" style="-fx-background-color: CCE0FF; -fx-background-radius: 24;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2862595319747925" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Text fill="#0c408b" layoutX="30.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacientes na data de:">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <DatePicker layoutX="229.0" layoutY="21.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="btn" layoutX="338.0" layoutY="30.0" mnemonicParsing="false" onAction="#pacientebotao" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/jaolo/git/repository2/doc/src/images/addiconbutton.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
