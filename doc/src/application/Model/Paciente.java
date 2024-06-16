@@ -6,7 +6,18 @@ public class Paciente {
 	private String Peso;
 	private String Historico;
 	private String Sexo;
+	private String Data;
+	
 
+	public Paciente(String idade, String nome, String historico, String peso, String sexo, String data){
+		this.setIdade(idade);
+		this.setNome(nome);
+		this.setHistorico(historico);
+		this.setPeso(peso);
+		this.setSexo(sexo);
+		this.setData(data);		
+	}
+	
 	public Paciente(String idade, String nome, String historico, String peso, String sexo){
 		this.setIdade(idade);
 		this.setNome(nome);
@@ -54,5 +65,11 @@ public class Paciente {
 
 	public void setSexo(String sexo) {
 		Sexo = sexo;
+	}
+	public String getData() {
+		return Data;
+	}
+	public void setData(String data) {
+		Data = data;
 	}
 }

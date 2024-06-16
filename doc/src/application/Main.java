@@ -20,7 +20,7 @@ public class Main extends Application {
 			window.setScene(scene);
 			window.show();
 			
-			Image icon = new Image("SSU.png");
+			Image icon = new Image("\\images\\SSU.png");
 			window.getIcons().add(icon);
 		} catch (Exception e) {
 			e.printStackTrace();

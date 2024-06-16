@@ -15,7 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.text.Text;
@@ -32,7 +32,8 @@ public class HomeController extends NotfController implements Initializable{
 	private Label nomegrande;
 	
 	@FXML
-	private Button btn;
+	private DatePicker data;
+
 	
 	public static Label nome_static;
 	public static Label nomegrande_static;
@@ -45,9 +46,9 @@ public class HomeController extends NotfController implements Initializable{
 	
 	@FXML
 	private Text n3;
+	
 	DaoPaciente pacienteDao = DaoPaciente.getInstance();
 	List<Paciente> Pacientes = pacienteDao.RetornarPacientes();
-	
 	@FXML
 	public void switchToWindow1(ActionEvent event) throws IOException
 	{
@@ -72,7 +73,7 @@ public class HomeController extends NotfController implements Initializable{
 		tela.setTitle("SSU Agenda");
 		tela.setScene(scene);
 		tela.show();
-		Image icon = new Image("SSU.png");
+		Image icon = new Image("\\images\\SSU.png");
 		tela.getIcons().add(icon);
 	}
 	
@@ -84,7 +85,7 @@ public class HomeController extends NotfController implements Initializable{
 		tela.setTitle("SSU Agenda");
 		tela.setScene(scene);
 		tela.show();
-		Image icon = new Image("SSU.png");
+		Image icon = new Image("\\images\\SSU.png");
 		tela.getIcons().add(icon);
 	}
 	
@@ -101,7 +102,7 @@ public class HomeController extends NotfController implements Initializable{
 				tela.setTitle("SSU Agenda");
 				tela.setScene(scene);
 				tela.show();
-				Image icon = new Image("SSU.png");
+				Image icon = new Image("\\images\\SSU.png");
 				tela.getIcons().add(icon);
 				nm_static.setText(paciente.getNome());
 				idd_static.setText(paciente.getIdade());
@@ -122,7 +123,7 @@ public class HomeController extends NotfController implements Initializable{
 				tela.setTitle("SSU Agenda");
 				tela.setScene(scene);
 				tela.show();
-				Image icon = new Image("SSU.png");
+				Image icon = new Image("\\images\\SSU.png");
 				tela.getIcons().add(icon);
 				nm_static.setText(paciente.getNome());
 				idd_static.setText(paciente.getIdade());
@@ -143,7 +144,7 @@ public class HomeController extends NotfController implements Initializable{
 				tela.setTitle("SSU Agenda");
 				tela.setScene(scene);
 				tela.show();
-				Image icon = new Image("SSU.png");
+				Image icon = new Image("\\images\\SSU.png");
 				tela.getIcons().add(icon);
 				nm_static.setText(paciente.getNome());
 				idd_static.setText(paciente.getIdade());
@@ -152,5 +153,6 @@ public class HomeController extends NotfController implements Initializable{
 				hist_static.setText(paciente.getHistorico());
 			}
 	}
+	
 	
 }
