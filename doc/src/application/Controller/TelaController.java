@@ -2,7 +2,6 @@ package application.Controller;
 
 import java.io.IOException;
 
-import application.Model.DaoMed;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,7 +30,6 @@ public class TelaController
 	private TextField usuarioMed;
 	@FXML
 	private TextField senhalog;
-	public DaoMed medicoDao;
 	
 	public void switchToWindow1(ActionEvent event) throws IOException
 	{

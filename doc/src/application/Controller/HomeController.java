@@ -52,7 +52,7 @@ public class HomeController extends NotfController implements Initializable{
 	@FXML
 	public void switchToWindow1(ActionEvent event) throws IOException
 	{
-		Parent root = FXMLLoader.load(getClass().getResource("/application/View/paciente.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/application/View/login.fxml"));
 		window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		window.setScene(scene);
